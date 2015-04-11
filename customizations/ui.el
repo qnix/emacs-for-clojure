@@ -24,8 +24,8 @@
 ;; for a great explanation of emacs color themes.
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Custom-Themes.html
 ;; for a more technical explanation.
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-(add-to-list 'load-path "~/.emacs.d/themes")
+(add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes"))
+(add-to-list 'load-path (concat user-emacs-directory "themes"))
 (load-theme 'tomorrow-night-bright t)
 
 ;; increase font size for better readability

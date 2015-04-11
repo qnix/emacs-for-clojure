@@ -2,6 +2,8 @@
 ;; Packages
 ;;;;
 
+(setq user-emacs-directory (expand-file-name "~/clj-emacs/"))
+
 ;; Define package repositories
 (require 'package)
 (add-to-list 'package-archives
@@ -84,18 +86,19 @@
     (package-install p)))
 
 
-;; Place downloaded elisp files in ~/.emacs.d/vendor. You'll then be able
-;; to load them.
+;; Place downloaded elisp files in ;; ~/<user-emacs-directory>/vendor.
+;; You'll then be able to load them.
 ;;
-;; For example, if you download yaml-mode.el to ~/.emacs.d/vendor,
-;; then you can add the following code to this file:
+;; For example, if you download yaml-mode.el to
+;; ~/<user-emacs-directory>/vendor, then you can add the following code
+;; to this file:
 ;;
 ;; (require 'yaml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
+;;
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
-(add-to-list 'load-path "~/.emacs.d/vendor")
+(add-to-list 'load-path (concat user-emacs-directory "vendor"))
 
 
 ;;;;
@@ -104,7 +107,7 @@
 
 ;; Add a directory to our load path so that when you `load` things
 ;; below, Emacs knows where to look for the corresponding file.
-(add-to-list 'load-path "~/.emacs.d/customizations")
+(add-to-list 'load-path (concat user-emacs-directory "customizations"))
 
 ;; Sets up exec-path-from-shell so that Emacs will use the correct
 ;; environment variables
