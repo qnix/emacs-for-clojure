@@ -9,6 +9,7 @@
 (load "setup-cask.el")
 (load "setup-evil.el")
 (load "setup-helm.el")
+(load "setup-magit.el")
 
 ;;;;
 ;; Customization
