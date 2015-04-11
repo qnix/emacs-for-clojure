@@ -23,7 +23,6 @@
 
 ;; Evil mode
 (depends-on "evil")
-(depends-on "evil-leader")
 (depends-on "undo-tree")
 
 ;; Clojure
@@ -36,5 +35,3 @@
 
 ;; OCaml
 (depends-on "tuareg")
-
-

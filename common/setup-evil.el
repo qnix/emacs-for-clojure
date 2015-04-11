@@ -99,20 +99,6 @@
 (define-key evil-visual-state-map "/" "y/\C-r\"\C-m")
 
 
-;;;; evil-leader
-(require 'evil-leader)
-(global-evil-leader-mode)
-(evil-leader/set-leader ",")
-(evil-leader/set-key
-  "a" 'evil-jump-forward
-  "r" 'evil-jump-backward
-  "j" 'ace-jump-mode
-
-  "F" 'projectile-find-file
-  "f" 'find-file
-  )
-
-
 (provide 'setup-evil)
 
 ;;; setup-evil.el ends here
