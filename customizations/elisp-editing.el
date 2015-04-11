@@ -13,3 +13,10 @@
 (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
 (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+
+;; some bindings for paredit-wrap
+(define-key paredit-mode-map (kbd "C-c w [") 'paredit-wrap-square)
+(define-key paredit-mode-map (kbd "C-c w (") 'paredit-wrap-round)
+(define-key paredit-mode-map (kbd "C-c w {") 'paredit-wrap-curly)
+(define-key paredit-mode-map (kbd "C-c w <") 'paredit-wrap-angled)
+(define-key paredit-mode-map (kbd "C-c w e") 'paredit-wrap-sexp)
