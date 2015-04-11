@@ -8,6 +8,7 @@
 (add-to-list 'load-path (concat user-emacs-directory "common"))
 (load "setup-cask.el")
 (load "setup-evil.el")
+(load "setup-helm.el")
 
 ;;;;
 ;; Customization
