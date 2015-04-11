@@ -27,7 +27,6 @@
 
 ;; Clojure
 (depends-on "paredit")
-(depends-on "rainbow-delimiters")
 (depends-on "clojure-mode")
 (depends-on "clojure-mode-extra-font-locking")
 (depends-on "cider")
