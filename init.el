@@ -34,11 +34,11 @@
 ;; These customizations make editing a bit nicer.
 (load "editing.el")
 
-;; Hard-to-categorize customizations
-(load "misc.el")
-
 ;; For editing lisps
 (load "elisp-editing.el")
+
+;; Hard-to-categorize customizations
+(load "misc.el")
 
 ;; Langauage-specific
 (load "setup-clojure.el")
