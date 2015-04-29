@@ -1,1 +1,0 @@
-/Users/qta/.emacs.d/common/setup-magit.el

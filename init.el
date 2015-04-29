@@ -1,15 +1,26 @@
 
 ;; Set the user-emacs-directory if this is not the default emacs config
 (setq user-emacs-directory (expand-file-name "~/clj-emacs/"))
+(add-to-list 'load-path user-emacs-directory)
+(load "init-cask.el")
 
 ;; I am sick and tired of 'package! Always mess up at the wrong moment.
 ;; Use Cask! once the package is installed, it's there until I fancy
 ;; another update/upgrade.
 (add-to-list 'load-path (concat user-emacs-directory "common"))
-(load "setup-cask.el")
 (load "setup-evil.el")
-(load "setup-helm.el")
+(load "sanity.el")
+(load "compatibility.el")
+
+(load "setup-backup.el")
+(load "setup-file-handling.el")
+(load "setup-helpers.el")
+(load "setup-keys.el")
+(load "setup-toggle-map.el")
+(load "setup-launcher-map.el")
+
 (load "setup-magit.el")
+(load "setup-helm.el")
 
 ;;;;
 ;; Customization
