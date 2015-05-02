@@ -21,6 +21,7 @@
 
 (load "setup-magit.el")
 (load "setup-helm.el")
+(load "setup-org-mode.el")
 
 ;;;;
 ;; Customization
