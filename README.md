@@ -1,3 +1,8 @@
+Please use the original repo which can be found here:
+[this introductory tutorial](http://www.braveclojure.com/basic-emacs/)!
+
+I have make many personal changes to the fork that it very likely will not work for you.
+
 # this is a Clojure-friendly emacs config
 
 If you're new to emacs, check out
@@ -8,7 +13,7 @@ If you're new to emacs, check out
 I've tried to separate everything logically and document the purpose
 of every line. [`init.el`](./init.el) acts as a kind of table of
 contents.  It's a good idea to eventually go through `init.el` and the
-files under the `customizations` directory so that you know exactly
+files under the `config` directory so that you know exactly
 what's going on.
 
 ## Supporting CSS, HTML, JS, etc.
