@@ -14,6 +14,7 @@
 (depends-on "smartparens")
 (depends-on "smex")
 (depends-on "use-package")
+(depends-on "ag")
 
 (depends-on "magit")
 (depends-on "helm")
@@ -31,6 +32,14 @@
 (depends-on "clojure-mode-extra-font-locking")
 (depends-on "cider")
 (depends-on "web-mode")
+
+;; Haskell
+(depends-on "shm")
+(depends-on "haskell-mode")
+(depends-on "flycheck-haskell")
+(depends-on "idris-mode")
+(depends-on "purescript-mode")
+(depends-on "psci")
 
 ;; OCaml
 (depends-on "tuareg")

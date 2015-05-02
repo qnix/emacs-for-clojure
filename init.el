@@ -56,3 +56,4 @@
 (load "setup-clojure.el")
 (load "setup-js.el")
 (load "setup-ocaml.el")
+(load "setup-haskell.el")
