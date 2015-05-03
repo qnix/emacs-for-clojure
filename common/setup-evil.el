@@ -44,6 +44,7 @@
 (setq evil-esc-delay 0.75)
 
 (define-key evil-insert-state-map "\C-g" 'evil-normal-state)
+(define-key evil-insert-state-map "\C-c\C-c" 'evil-normal-state)
 
 ;;; esc quits
 (define-key evil-normal-state-map [escape] 'keyboard-quit)
