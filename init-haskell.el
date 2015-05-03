@@ -10,8 +10,9 @@
 (add-to-list 'load-path (concat user-emacs-directory "common"))
 (load "setup-evil.el")
 (load "setup-magit.el")
+(load "setup-mac.el")
 
-
+(add-to-list 'exec-path "/Users/qta/current-work/Idris-dev/.cabal-sandbox/bin")
 ;;;;
 ;; Customization
 ;;;;
@@ -35,12 +36,8 @@
 ;; These customizations make editing a bit nicer.
 (load "editing.el")
 
-;; For editing lisps
-(load "elisp-editing.el")
-
 ;; Hard-to-categorize customizations
 (load "misc.el")
 
 ;; Langauage-specific
 (load "setup-haskell.el")
-
