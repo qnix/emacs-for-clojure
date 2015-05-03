@@ -41,7 +41,7 @@
 ;; contains Meta key, use toggle evil escape delay (C-x t e).  This
 ;; setting has no effect when in GUI, so set it to 0 initially to make
 ;; it easy to work with terminal.
-(setq evil-esc-delay 0)
+(setq evil-esc-delay 0.75)
 
 (define-key evil-insert-state-map "\C-g" 'evil-normal-state)
 
