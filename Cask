@@ -19,7 +19,6 @@
 (depends-on "magit")
 (depends-on "helm")
 (depends-on "helm-ag")
-(depends-on "projectile")
 (depends-on "yasnippet")
 
 ;; Evil mode
