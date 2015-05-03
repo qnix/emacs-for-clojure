@@ -48,9 +48,6 @@
 (modify-syntax-entry ?- "w" lisp-mode-syntax-table)
 (modify-syntax-entry ?- "w" lisp-interaction-mode-syntax-table)
 
-;(require 'cl)
-;(require 'ansi-color)
-
 (require 'ffap)
 ;; (ffap-bindings)
 
@@ -61,9 +58,5 @@
 ;; Prevent killing of certain buffer by filename regexp (default is *scratch*)
 (if (fboundp 'unkillable-scratch) (unkillable-scratch 1))
 
-;; git-gutter
-(if (fboundp 'global-git-gutter) (global-git-gutter +1))
-
 (provide 'sanity)
-
 ;;; sanity.el ends here
