@@ -12,6 +12,7 @@
 (load "sanity.el")
 (load "compatibility.el")
 
+(load "setup-mac.el")
 (load "setup-backup.el")
 (load "setup-file-handling.el")
 (load "setup-helpers.el")
