@@ -30,7 +30,7 @@
 
 ;; Extra keybindings
 (global-set-key (kbd "C-x M-s") 'save-buffer-always)
-(global-set-key (kbd "C-x f")   'projectile-find-file)
+(global-set-key (kbd "C-x f")   'helm-find-file)
 (global-set-key (kbd "M-/")     'hippie-expand)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-s")     'isearch-forward-regexp)

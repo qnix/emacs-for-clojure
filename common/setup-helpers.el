@@ -66,14 +66,14 @@
 (defun qnix/find-first-filename (directory pattern)
   "Find the first file match the pattern in the given directory"
   (let* ((directory (file-truename directory))
-         (find-command (concat "/usr/bin/find " directory " -name " pattern)))
+         (find-command (concat "find " directory " -name " pattern)))
     (car (split-string (shell-command-to-string find-command) nil))))
 
 
 (defun qnix/find-last-filename (directory pattern)
   "Find the first file match the pattern in the given directory"
   (let* ((directory (file-truename directory))
-         (find-command (concat "/usr/bin/find " directory " -name " pattern)))
+         (find-command (concat "find " directory " -name " pattern)))
     (car (last (split-string (shell-command-to-string find-command) nil)))))
 
 

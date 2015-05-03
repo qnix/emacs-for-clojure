@@ -38,5 +38,4 @@
 (define-key input-decode-map "\e[1;8D" [C-M-left])
 
 (provide 'compatibility)
-
 ;;; compatibility.el ends here
