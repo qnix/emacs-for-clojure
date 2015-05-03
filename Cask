@@ -37,6 +37,7 @@
 (depends-on "haskell-mode")
 (depends-on "flycheck-haskell")
 (depends-on "idris-mode")
+(depends-on "helm-idris")
 (depends-on "purescript-mode")
 (depends-on "psci")
 
