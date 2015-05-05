@@ -14,7 +14,7 @@
 (setq mac-right-control-modifier 'super)
 
 (defvar normal-frame-alist
-  `((font . "Monaco-17")
+  `((font . "Monaco-18")
     (border-color . "lightskyblue1")
     (cursor-color . "brown")
     (width . 100) (height . 32)
