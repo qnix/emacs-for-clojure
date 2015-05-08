@@ -46,6 +46,9 @@
 ;; OCaml
 (depends-on "tuareg")
 
+;; Rust
+(depends-on "rust-mode")
+
 ;; Web related
 (depends-on "js2-mode")
 (depends-on "js2-refactor")
