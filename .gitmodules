@@ -1,0 +1,3 @@
+[submodule "extras/tern"]
+	path = extras/tern
+	url = git@github.com:marijnh/tern.git

@@ -32,19 +32,20 @@
 (require 'undo-tree)
 (global-undo-tree-mode)
 
+
 ;; Make hjkl keys work in special buffers
 (evil-add-hjkl-bindings recentf-mode-map 'emacs)
 (evil-add-hjkl-bindings bookmark-map 'emacs)
+(evil-add-hjkl-bindings magit-map 'emacs)
 
 
 ;; To get a reasonable delay to make it easy to enter binding that
 ;; contains Meta key, use toggle evil escape delay (C-x t e).  This
 ;; setting has no effect when in GUI, so set it to 0 initially to make
 ;; it easy to work with terminal.
-(setq evil-esc-delay 0.75)
+(setq evil-esc-delay 0.0)
 
 (define-key evil-insert-state-map "\C-g" 'evil-normal-state)
-(define-key evil-insert-state-map "\C-c\C-c" 'evil-normal-state)
 
 ;;; esc quits
 (define-key evil-normal-state-map [escape] 'keyboard-quit)
