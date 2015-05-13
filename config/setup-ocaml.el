@@ -4,6 +4,8 @@
 ;; path where opam executable is installed
 (add-to-list 'exec-path "/usr/qta/local/bin")
 
+(setq tuareg-display-buffer-on-eval nil)
+
 (if (executable-find "opam")
     (progn
 
@@ -34,13 +36,16 @@
              (shell-command-to-string (concat ocp-edit-mode-bin " emacs -load-global-config"))
              (eval-buffer))))
 
+      (if (executable-find "utop")
+          (progn
 ;;;; auto load utop.el
-      (autoload 'utop "utop" "Toplevel for OCaml" t)
+            (autoload 'utop "utop" "Toplevel for OCaml" t)
 
 ;;;; replace the default toplevel used by tuareg/typerex to utop
-      (autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t)
-      (add-hook 'tuareg-mode-hook 'utop-setup-ocaml-buffer)
-      (add-hook 'typerex-mode-hook 'utop-setup-ocaml-buffer)
+            (autoload 'utop-setup-ocaml-buffer "utop" "Toplevel for OCaml" t)
+            (add-hook 'tuareg-mode-hook 'utop-setup-ocaml-buffer)
+            (add-hook 'typerex-mode-hook 'utop-setup-ocaml-buffer)
+            ))
 
 ;;;; merlin configuration
       (require 'merlin)

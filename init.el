@@ -53,6 +53,7 @@
 
 ;; Hard-to-categorize customizations
 (load "misc.el")
+(load "setup-twitter")
 
 ;; Langauage-specific
 (load "setup-clojure.el")
