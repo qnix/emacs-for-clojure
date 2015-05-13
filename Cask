@@ -15,6 +15,7 @@
 (depends-on "smartparens")
 (depends-on "smex")
 (depends-on "use-package")
+(depends-on "twittering-mode")
 
 ;; General Tools/Utils
 (depends-on "ag")
@@ -51,11 +52,13 @@
 
 ;; Web related
 (depends-on "js2-mode")
+(depends-on "ac-js2")
 (depends-on "js2-refactor")
 (depends-on "discover-js2-refactor")
 (depends-on "web-mode")
 (depends-on "skewer-mode")
 (depends-on "simple-httpd")
+(depends-on "tagedit")
 
 (development
   (depends-on "buttercup"))
