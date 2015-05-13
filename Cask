@@ -22,6 +22,7 @@
 (depends-on "helm")
 (depends-on "helm-ag")
 (depends-on "magit")
+(depends-on "git-timemachine")
 (depends-on "neotree")
 (depends-on "yasnippet")
 
